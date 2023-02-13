@@ -9,12 +9,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skins/color-1.css">
     
-    <!-- https://cdnjs.com/ Awesome -->
+    <!-- ========https://cdnjs.com/ Awesome ========-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
+    <!--=========== style switcher ==========-->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="css/style-switcher.css">
 </head>
-<body>
+<body > 
     <!-- ====== MAin container Start=====-->
     <div class="main-container">
     <!-- ====== Aside Start =====-->    
@@ -26,18 +31,18 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#" ><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#" ><i class="fa fa-list"></i>Service</a></li>
-                <li><a href="#" ><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#" ><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about" ><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services" ><i class="fa fa-list"></i>Service</a></li>
+                <li><a href="#portfolio" ><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact" ><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </div>
         <!-- ====== Aside End  =====-->  
         <!-- ====== MAin contenct start=====-->
         <div class="main-content">
             <!-- ====== Home Section Start=====-->
-            <section class="home section ">
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -58,7 +63,7 @@
             </section>
             <!-- ====== Home Section End=====-->
             <!-- ====== about Section start=====-->
-            <section class="about section ">
+            <section class="about section " id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -239,7 +244,7 @@
             </section>
             <!-- ====== about Section End=====-->
             <!-- ====== Services Section Start=====-->
-            <section class="service section ">
+            <section class="service section " id="services">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -318,7 +323,8 @@
             </section>
             <!-- ====== Services Section End=====-->
             <!-- ====== Portafolio Section Start=====-->
-            <section class="portfolio section ">
+            <section class="service section " id="portfolio">
+                <section class="portfolio section " >
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -390,7 +396,7 @@
             </section>
             <!-- ====== Portafolio Section End=====-->
             <!-- ====== Contact Section start=====-->
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -480,7 +486,7 @@
             <i class="fas fa-cog fa-spin"></i>
         </div>
         <div class="day-night s-icon">
-            <i class="fas fa-moon"></i>
+            <i class="fas"></i>
         </div>
         <h4>Theme Colors</h4>
         <div class="colors">
@@ -493,6 +499,8 @@
     </div>
     <!-- ====== style switcher start  End=====-->
     <!-- ====== JS Files =====-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>
