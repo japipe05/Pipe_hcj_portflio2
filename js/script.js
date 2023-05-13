@@ -1,7 +1,17 @@
-/* =======================Typing animation=========================*/
-var typed = new Typed(".typing",{
-    strings:["","Web Designer","Web Developer","Grapic Designer","Youtuber"],
-    typeSpeed:100,
-    BackSpeed:60,
-    loop:true
-});
+var texto = document.getElementById('texto-movil');
+var palabras = ['Hola', 'este', 'es', 'un', 'ejemplo'];
+var palabraActual = 0;
+var letraActual = 0;
+
+setInterval(function() {
+  if (letraActual <= palabras[palabraActual].length) {
+    texto.innerHTML = palabras[palabraActual].substr(0, letraActual);
+    letraActual++;
+  } else {
+    letraActual = 0;
+    palabraActual++;
+    if (palabraActual >= palabras.length) {
+      palabraActual = 0;
+    }
+  }
+}, 500); // cada 500ms muestra una nueva palabra
